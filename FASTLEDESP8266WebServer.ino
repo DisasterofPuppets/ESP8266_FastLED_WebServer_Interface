@@ -100,14 +100,18 @@ Serial.println("Option 1");
 
 rainbowled();
 }
- else if (server.hasArg("LEDselection2")){
+
+/* Start Codeblock --- duplicate and update this codeblock for each checkbox --*/  
+
+  else if (server.hasArg("LEDselection2")){
 Serial.println("Option 2");
-//Serial.println(server.arg("LEDselection2"));
+
+/*----------------------- End Code Block --------------------------------------*/
+    
+    
 }
 else if (server.hasArg("off")){
  Serial.println("Option 3");
- //Serial.println(server.arg("off")); 
-
   FastLED.clear();  
  
 }
@@ -115,6 +119,7 @@ else if (server.hasArg("off")){
   server.sendHeader("Location","/");        // Add a header to respond with a new location for the browser to go to the home page again
   server.send(303);                         // Send it back to the browser with an HTTP status 303 (See Other) to redirect
 }
+
 
 void handleNotFound(){
   server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
