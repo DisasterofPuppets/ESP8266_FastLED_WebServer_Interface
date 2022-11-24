@@ -1,7 +1,8 @@
-# ESP8266_FastLED_WebServer_Interface
+# ESP8266_Checkbox_Control_WebServer_Interface
 
 ***********************************************************************************************
-Abandoned I realised the animations were not playing since I need to get them into the main loop somehow. I ended up getting WLED (https://install.wled.me/) to work without disconnecting from my network so I went with that :)
+Abandoned I realised the animations were not playing for Fast LED since I need to get them into the main loop somehow. 
+I ended up getting WLED (https://install.wled.me/) to work without disconnecting from my network so I went with that :)
 
 *** This would be good to use for single colours etc, or as mentioned, simply adapted for on / off options for anything IOT 
 *********************************************************************************
